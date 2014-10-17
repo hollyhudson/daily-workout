@@ -28,6 +28,8 @@ for line in routines:
 		# we don't want to run out of colors
 		# better to loop back around
 		coloriterator = (coloriterator + 1) % 9
+		current_file.write("<br><br>\n") # put a space w/out checkbox
+		continue
 	
 	current_file.write("<input type=\"checkbox\" id=%d>" % idnum)
 	current_file.write("<label style=\"color:%s;\" for=%d>" % (colors[coloriterator], idnum))
