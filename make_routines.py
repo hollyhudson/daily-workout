@@ -1,3 +1,7 @@
+# Reads a plaintext file of workout routines
+# and splits them into an html file for each day of the week
+# by Holly Hudson
+
 idnum = 0
 first_time_through = True
 colors = [
@@ -20,15 +24,19 @@ for line in routines:
                 current_file = open(new_file_name, 'w')
 		current_file.write("<html>\n")
 		current_file.write("<form>\n")
+		current_file.write("<font color=#000000>")
+		current_file.write(routines.next())
+		current_file.write("</font>")
 		first_time_through = False
                 continue
 
 	idnum += 1  # idnum is needed for checkboxes to work
 	if line == "\n":
+		# put an html newline/space, but with no checkbox
+		current_file.write("<br><br>\n") 
 		# we don't want to run out of colors
 		# better to loop back around
 		coloriterator = (coloriterator + 1) % 9
-		current_file.write("<br><br>\n") # put a space w/out checkbox
 		continue
 	
 	current_file.write("<input type=\"checkbox\" id=%d>" % idnum)
