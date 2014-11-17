@@ -1,0 +1,55 @@
+pushups-H1:10 push ups
+pushups-H2:8 push ups
+pushups-H3:5 push ups
+
+pushups-E1:20 push ups
+pushups-E2:20 push ups
+pushups-E3:20 push ups
+
+squats-H1:18 one leg bench squats
+squats-H2:10 close squats
+squats-H3:18 one leg bench squats
+
+squats-E1:10 full squats
+squats-E2:10 close squats
+squats-E3:10 full squats
+
+pullups-H1:5 full pull ups
+pullups-H2:8 assisted pull ups
+pullups-H3:8 assisted pull ups
+
+pullups-E1:2 full pull ups
+pullups-E2:2 full pull ups
+pullups-E3:2 full pull ups
+
+raises-H1:15 bent leg raises
+raises-H2:5 L-sit raises
+raises-H3:15 bent leg raises
+
+raises-E1:15 flat leg raises
+raises-E2:10 hanging knee leg raises
+raises-E3:3 L-sit raises
+
+planche-H1:5 dips
+planche-H2:advanced frog stand (for time)
+planche-H3:5 dips
+
+planche-E1:3 dips
+planche-E2:1 frog stand (for time)
+planche-E3:3 dips
+
+bridges-H1:5 bridge presses
+bridges-H2:10 short bridges
+bridges-H3:5 bridge presses
+
+bridges-E1:15 short bridges
+bridges-E2:3 bridge presses
+bridges-E3:15 short bridges
+
+handstands-H1:11 pike push ups
+handstands-H2:11 pike push ups
+handstands-H3:1 hand stand hold (lower to pike)
+
+handstands-E1:4 pike push ups
+handstands-E2:4 pike push ups
+handstands-E3:1 hand stand hold (lower to pike)
