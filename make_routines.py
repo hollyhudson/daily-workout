@@ -18,7 +18,7 @@ coloriterator = 0
 # here's where we get the plaintext listing of all the routines for the week:
 routines = open('routines.txt', 'r')
 rep_guide = open('rep_guide.txt','r')
-first_routine = True
+round_counter = 0
 current_file = None
 reps = {}
 
@@ -38,17 +38,23 @@ for line in routines:
 	# We're processing daily routines 
 	# new .html file
         if line == "===\n":  # delineates different daily routines in .txt file
-		if not first_routine:
+		if round_counter != 0:
 			current_file.write("</form>\n")
+			current_file.write("</body>\n")
 			current_file.write("</html>\n")
                 new_file_name = routines.next().rstrip('\n')
                 current_file = open(new_file_name, 'w')
 		current_file.write("<html>\n")
+		current_file.write("<head>\n")
+		current_file.write(" 	<title>Today's Routine</title>\n")
+		current_file.write(" 	<link href=\"Site.css\" rel=\"stylesheet\">\n")
+		current_file.write("</head>\n")
+		current_file.write("<body>\n")
 		current_file.write("<form>\n")
-		current_file.write("<font color=#000000>")
-		current_file.write(routines.next())
-		current_file.write("</font>")
-		first_time_through = False
+		
+		# Write the heading, ie the exercise set title
+		current_file.write("<h1>%s</h1>\n" % routines.next().rstrip('\n'))
+		round_counter = round_counter + 1 
 		continue
 
 	# contents of one .html file
