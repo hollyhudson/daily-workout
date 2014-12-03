@@ -8,12 +8,6 @@
 # routines.txt:  creates the daily routines for the .html file output
 
 idnum = 0
-colors = [
-	"#cf6bec", "#6f7072", "#f27f20",
-	"#00a2ff", "#cf25c8", "#07eaf2",
-	"#2877dc", "#2ae6b7", "#2aafe6"]
-coloriterator = 0
-#color = colors[coloriterator]
 
 # here's where we get the plaintext listing of all the routines for the week:
 routines = open('routines.txt', 'r')
@@ -54,25 +48,31 @@ for line in routines:
 		
 		# Write the heading, ie the exercise set title
 		current_file.write("<h1>%s</h1>\n" % routines.next().rstrip('\n'))
-		round_counter = round_counter + 1 
+		current_file.write("<p class=\"round%d\">\n" % round_counter)
+		round_counter = (round_counter + 1) % 4
 		continue
 
 	# contents of one .html file
 	idnum += 1  # idnum is needed for checkboxes to work
-	if line == "\n":
+	if line == "\n":  # we're at a round boundary
 		# put an html newline/space, but with no checkbox
 		current_file.write("<br><br>\n") 
+		# Set look and feel for this round
+		current_file.write("</p>\n")
+		current_file.write("<p class=\"round%d\">\n" % round_counter)
 		# we don't want to run out of colors
 		# better to loop back around
-		coloriterator = (coloriterator + 1) % 9
+		round_counter = (round_counter + 1) % 4
 		continue
 	
 	# write an actual workout item in the .html file
-	current_file.write("<input type=\"checkbox\" id=%d>" % idnum)
-	current_file.write("<label style=\"color:%s;\" for=%d>" % (colors[coloriterator], idnum))
+	current_file.write(" 	<input type=\"checkbox\" id=%d>" % idnum)
+	current_file.write("<label for=%d>" % idnum)
        	current_file.write(reps[line.rstrip('\n')])
-	current_file.write("<br><br>\n")
+	current_file.write(" 	<br><br>\n")
+	
 
-current_file.write("</form>")
-current_file.write("</html>")
+current_file.write("</p>\n")
+current_file.write("</form>\n")
+current_file.write("</html>\n")
 

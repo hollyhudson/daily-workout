@@ -1,13 +1,13 @@
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 16px;
-	background-color: #9CF0E2;
+	background-color: #6f7072;
 	color: #ffffff;
 	padding: 3px;
 }
 
 #main {
-	background-color: #ffffff;
+	background-color: #6f7072;
 	border-radius: 0 0 5px 5px;
 	padding: 5px;
 	padding-left: 15px;
@@ -17,21 +17,26 @@ body {
 h1 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 30px;
-	color: #ffffff;
-	border-bottom: 3px solid #A3EB5B;
+	color: #f7f7ed;
+	border-bottom: 3px solid #f78f20;
 }
 
-#round1 {
-	color: #cf25c8;
-	background-color: #f1c8ff;
+p.round0 {
+	color: #6f7072;
+	background-color: #6f7072;
 }
 
-#round2 {
-	color: #00a2ff;
-	background-color: #ffdabf;
+p.round1 {
+	color: #4b2c4b;
+	background-color: #f7f7ed;
 }
 
-#round3 {
-	color: #2aafe6;
-	background-color: #e1d5ff;
+p.round2 {
+	color: #700bc9;
+	background-color: #f7f7ed;
+}
+
+p.round3 {
+	color: #f78f20;
+	background-color: #f7f7ed;
 }
