@@ -42,6 +42,7 @@ for line in routines:
 		current_file.write("<head>\n")
 		current_file.write(" 	<title>Today's Routine</title>\n")
 		current_file.write(" 	<link href=\"Site.css\" rel=\"stylesheet\">\n")
+		current_file.write(" 	<script src=\"/Users/holly/tools/javascript/jquery-2.1.1.min.js\"></script>\n")
 		current_file.write("</head>\n")
 		current_file.write("<body>\n")
 		current_file.write("<form>\n")
@@ -49,7 +50,7 @@ for line in routines:
 		# Write the heading, ie the exercise set title
 		current_file.write("<h1>%s</h1>\n" % routines.next().rstrip('\n'))
 		current_file.write("<p class=\"round%d\">\n" % round_counter)
-		round_counter = (round_counter + 1) % 4
+		round_counter = (round_counter + 1) % 5
 		continue
 
 	# contents of one .html file
@@ -62,7 +63,7 @@ for line in routines:
 		current_file.write("<p class=\"round%d\">\n" % round_counter)
 		# we don't want to run out of colors
 		# better to loop back around
-		round_counter = (round_counter + 1) % 4
+		round_counter = (round_counter + 1) % 5
 		continue
 	
 	# write an actual workout item in the .html file
