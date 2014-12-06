@@ -42,7 +42,14 @@ for line in routines:
 		current_file.write("<head>\n")
 		current_file.write(" 	<title>Today's Routine</title>\n")
 		current_file.write(" 	<link href=\"Site.css\" rel=\"stylesheet\">\n")
-		current_file.write(" 	<script src=\"/Users/holly/tools/javascript/jquery-2.1.1.min.js\"></script>\n")
+		current_file.write(" 	<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>\n")
+		current_file.write(" 	<script>\n")
+		current_file.write(" 	$(document).ready(function(){\n")
+		current_file.write(" 		$(\".item\").click(function(){\n")
+		current_file.write(" 			$(this).hide()\n")
+		current_file.write(" 		});\n")
+		current_file.write(" 	});\n")
+		current_file.write(" 	</script>\n")
 		current_file.write("</head>\n")
 		current_file.write("<body>\n")
 		current_file.write("<form>\n")
@@ -67,10 +74,9 @@ for line in routines:
 		continue
 	
 	# write an actual workout item in the .html file
-	current_file.write(" 	<input type=\"checkbox\" id=%d>" % idnum)
-	current_file.write("<label for=%d>" % idnum)
+	current_file.write(" 	<a class=\"item\">")
        	current_file.write(reps[line.rstrip('\n')])
-	current_file.write(" 	<br><br>\n")
+	current_file.write(" 	</a><br><br>\n")
 	
 
 current_file.write("</p>\n")
