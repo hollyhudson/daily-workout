@@ -1,5 +1,5 @@
 ===
-Tuesday.html
+workout1.html
 Squats and Planche
 
 squats-H1
@@ -21,7 +21,7 @@ bridges-E3
 handstands-E3
 
 ===
-Wednesday.html
+workout2.html
 Pullups and Bridges
 
 pushups-E1
@@ -46,7 +46,7 @@ bridges-H3
 handstands-E3
 
 ===
-Friday.html
+workout3.html
 Squats and Handstands
 
 pushups-E1
@@ -68,7 +68,7 @@ planche-E2
 handstands-H3
 
 ===
-Sunday.html
+workout4.html
 Pushups and Raises
 
 pushups-H1
