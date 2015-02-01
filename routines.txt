@@ -92,4 +92,29 @@ raises-H3
 planche-E3
 bridges-E3
 
+===
+easy.html
+Recovery Workout
+
+pushups-E1
+squats-E1
+pullups-E1
+planche-E1
+bridges-E1
+handstands-E1
+
+pushups-E2
+squats-E2
+pullups-E2
+planche-E2
+bridges-E2
+handstands-E2
+
+pushups-E3
+squats-E3
+pullups-E3
+planche-E3
+bridges-E3
+handstands-E3
+
 END
