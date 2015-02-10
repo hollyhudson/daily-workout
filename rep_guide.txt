@@ -14,7 +14,7 @@ squats-E1:10 full squats
 squats-E2:10 close squats
 squats-E3:10 full squats
 
-pullups-H1:5 full pull ups
+pullups-H1:6 full pull ups
 pullups-H2:8 assisted pull ups
 pullups-H3:8 assisted pull ups
 
