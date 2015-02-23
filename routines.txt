@@ -1,5 +1,5 @@
 ===
-workout1.html
+SquatsPlanche.html
 Squats and Planche
 
 squats-H1
@@ -21,7 +21,7 @@ bridges-E3
 handstands-E3
 
 ===
-workout2.html
+PullupsBridges.html
 Pullups and Bridges
 
 pushups-E1
@@ -46,7 +46,7 @@ bridges-H3
 handstands-E3
 
 ===
-workout3.html
+SquatsHandstands.html
 Squats and Handstands
 
 pushups-E1
@@ -68,7 +68,7 @@ planche-E2
 handstands-H3
 
 ===
-workout4.html
+PushupsRaises.html
 Pushups and Raises
 
 pushups-H1
